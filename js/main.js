@@ -17,6 +17,18 @@ L.control.scale({ imperial: false }).addTo(map);
 
 const fmt = n => n.toLocaleString("fr-FR");
 
+// Statistiques OSM / HOT mises à jour chaque jour par GitHub Actions (data/stats.json)
+fetch("data/stats.json", { cache: "no-store" }).then(r => r.json()).then(s => {
+  const o = s.osm, set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  const date = d => new Date(d).toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" });
+  set("osm-edits", fmt(o.edits));
+  set("osm-changesets", fmt(o.changesets));
+  set("osm-hot-cs", fmt(o.hot_changesets));
+  set("osm-hot-proj", fmt(o.hot_projects));
+  set("osm-last", o.last_edit ? date(o.last_edit) : "—");
+  set("osm-updated", `Mis à jour automatiquement le ${date(s.updated)} depuis l'API publique d'OpenStreetMap (contributeur depuis ${new Date(o.since).getFullYear()}).`);
+}).catch(() => {});
+
 // Communes
 fetch("data/communes.geojson").then(r => r.json()).then(gj => {
   const communes = L.geoJSON(gj, {
