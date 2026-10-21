@@ -31,6 +31,7 @@ img { max-width: 100%; display: block; }
 .hero-inner { max-width: 980px; margin: 0 auto; }
 .kicker { color: var(--sky); font-weight: 600; margin: 0 0 10px; }
 .hero h1 { font-size: clamp(1.9rem, 4.5vw, 3rem); line-height: 1.15; margin: 0 0 18px; }
+.tagline { font-size: 1.25rem; font-weight: 600; color: var(--sky); margin: -6px 0 14px; }
 .lead { font-size: 1.15rem; max-width: 720px; color: #d9e6f5; }
 .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
 .btn { display: inline-block; padding: 10px 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,.5); color: #fff;
