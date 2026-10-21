@@ -14,5 +14,6 @@ Site statique publié avec GitHub Pages : carte interactive Leaflet de la turbid
 ## Mettre à jour
 - **Ajouter une date de turbidité** : déposer la nouvelle carte exportée dans `THESE/Map` (même mise en page), puis lancer `python tools/prep_data.py data`.
 - **Texte, projets, publications** : modifier `index.html`.
+- **Statistiques OSM / HOT** : mises à jour automatiquement chaque jour par GitHub Actions (`.github/workflows/update-stats.yml` → `tools/update_stats.py` → `data/stats.json`). Lancement manuel : onglet *Actions* → *Mise à jour des statistiques OSM / HOT* → *Run workflow*. Penser à faire `git pull` avant de modifier le site en local.
 
 Sources : Copernicus Sentinel-2, limites communales DNCT, localités INSTAT/SPOT6, fonds de carte © Esri et © OpenStreetMap contributors.
