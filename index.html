@@ -23,6 +23,7 @@
   <a class="brand" href="#accueil">Allaye GUINDO</a>
   <nav>
     <a href="#carte">Carte</a>
+    <a href="#galerie">Galerie</a>
     <a href="#projets">Projets</a>
     <a href="#hot">HOT / OSM</a>
     <a href="#parcours">Parcours</a>
@@ -89,6 +90,24 @@
   <p class="note">Sources : Copernicus Sentinel-2 (traitement A. GUINDO), limites communales DNCT, localités INSTAT/SPOT6.
     Les cartes de turbidité ont été calées sur le fond à partir de leur carroyage (précision de l'ordre de quelques dizaines de mètres).</p>
 </section>
+
+<section id="galerie" class="section">
+  <h2>Cartes du lac Wégnia</h2>
+  <p class="sub">Mes cartes complètes, telles que réalisées pour le mémoire et la thèse. Cliquez pour agrandir ; flèches ← → pour naviguer.</p>
+  <div class="filters" role="group" aria-label="Filtrer les cartes">
+    <button class="chip-btn active" data-g="all">Toutes</button>
+    <button class="chip-btn" data-g="turbidite">Turbidité 2016 – 2021</button>
+    <button class="chip-btn" data-g="contexte">Bassin versant et contexte</button>
+  </div>
+  <div id="gallery" class="gallery"></div>
+</section>
+
+<div id="lightbox" class="lightbox" hidden>
+  <button class="lb-close" aria-label="Fermer">×</button>
+  <button class="lb-nav lb-prev" aria-label="Carte précédente">‹</button>
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb-nav lb-next" aria-label="Carte suivante">›</button>
+</div>
 
 <section id="projets" class="section">
   <h2>Projets</h2>

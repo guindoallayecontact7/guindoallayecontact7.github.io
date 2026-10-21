@@ -84,3 +84,38 @@ playBtn.addEventListener("click", () => {
   playBtn.textContent = "❚❚";
   timer = setInterval(() => show((+slider.value + 1) % frames.length), 1100);
 });
+
+// Galerie des cartes (data/galerie.json) + visionneuse
+(() => {
+  const grid = document.getElementById("gallery"), lb = document.getElementById("lightbox");
+  if (!grid || !lb) return;
+  const img = document.getElementById("lb-img"), cap = document.getElementById("lb-cap");
+  let items = [], shown = [], cur = 0;
+  const render = g => {
+    shown = g === "all" ? items : items.filter(i => i.g === g);
+    grid.innerHTML = "";
+    shown.forEach((it, k) => {
+      const b = document.createElement("button");
+      b.innerHTML = `<img src="img/cartes/mini/${it.f}" alt="${it.t}" loading="lazy"><span>${it.t}</span>`;
+      b.addEventListener("click", () => open(k));
+      grid.appendChild(b);
+    });
+  };
+  const open = k => { cur = (k + shown.length) % shown.length; const it = shown[cur];
+    img.src = `img/cartes/${it.f}`; img.alt = it.t; cap.textContent = `${it.t} (${cur + 1}/${shown.length})`;
+    lb.hidden = false; lb.querySelector(".lb-close").focus(); };
+  const close = () => { lb.hidden = true; };
+  lb.querySelector(".lb-close").addEventListener("click", close);
+  lb.querySelector(".lb-prev").addEventListener("click", () => open(cur - 1));
+  lb.querySelector(".lb-next").addEventListener("click", () => open(cur + 1));
+  lb.addEventListener("click", e => { if (e.target === lb) close(); });
+  document.addEventListener("keydown", e => {
+    if (lb.hidden) return;
+    if (e.key === "Escape") close(); else if (e.key === "ArrowLeft") open(cur - 1); else if (e.key === "ArrowRight") open(cur + 1);
+  });
+  document.querySelectorAll(".chip-btn").forEach(btn => btn.addEventListener("click", () => {
+    document.querySelectorAll(".chip-btn").forEach(x => x.classList.toggle("active", x === btn));
+    render(btn.dataset.g);
+  }));
+  fetch("data/galerie.json").then(r => r.json()).then(d => { items = d; render("all"); });
+})();
