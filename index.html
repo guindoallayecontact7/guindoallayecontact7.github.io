@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allaye GUINDO — Géomaticien, SIG &amp; Télédétection</title>
+<meta name="description" content="Portfolio d'Allaye GUINDO : géomaticien, spécialiste SIG et télédétection, responsable géomarketing et doctorant. Cartes interactives, projets et publications.">
+<meta property="og:title" content="Allaye GUINDO — Géomaticien, SIG & Télédétection">
+<meta property="og:description" content="Géospatial au service de l'eau, de l'énergie et de l'environnement en Afrique.">
+<meta property="og:image" content="img/banniere.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#accueil">Allaye GUINDO</a>
+  <nav>
+    <a href="#carte">Carte</a>
+    <a href="#projets">Projets</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="accueil" class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Géomaticien · SIG &amp; Télédétection · Doctorant</p>
+    <h1>Géospatial au service de l'eau, de l'énergie et de l'environnement</h1>
+    <p class="lead">Responsable Géomarketing chez WeLight (AXIAN Group) et doctorant en télédétection appliquée,
+      je transforme les données géospatiales en décisions concrètes en Afrique.</p>
+    <div class="cta">
+      <a class="btn primary" href="cv/CV_Allaye_GUINDO_FR.pdf" target="_blank" rel="noopener">CV (FR)</a>
+      <a class="btn" href="cv/CV_Allaye_GUINDO_EN.pdf" target="_blank" rel="noopener">CV (EN)</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/allayeguindo" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://www.researchgate.net/profile/Allaye-Guindo" target="_blank" rel="noopener">ResearchGate</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong>10+</strong><span>ans d'expérience terrain, SIG et données</span></div>
+  <div><strong>8+</strong><span>pays d'Afrique couverts en géomarketing</span></div>
+  <div><strong>14</strong><span>sites d'électrification étudiés (NIES)</span></div>
+  <div><strong>6</strong><span>publications et communications</span></div>
+</section>
+
+<section id="apropos" class="section narrow">
+  <h2>À propos</h2>
+  <p>Géomaticien formé à l'Université des Sciences Sociales et de Gestion de Bamako (Master Géo-GATE, mention Bien),
+    je coordonne chez WeLight les études géomarketing et l'analyse du potentiel d'électrification rurale par mini-réseaux solaires,
+    dans plus de 8 pays d'Afrique. Je contribue aux études d'impact environnemental et social (NIES / PGES-ESIA)
+    et je conçois des procédures de contrôle qualité et des tableaux de bord Power BI.</p>
+  <p>En parallèle, ma thèse de doctorat (ED-DESSLA, USSGB) porte sur les dynamiques spatio-temporelles des ressources hydriques
+    et environnementales des zones humides sahéliennes, à travers le cas du lac Wégnia (Mali), site Ramsar.
+    Cartographe humanitaire depuis 2017 (Humanitarian OpenStreetMap Team, YouthMappers).</p>
+</section>
+
+<section id="carte" class="section">
+  <h2>Carte interactive — turbidité du lac Wégnia</h2>
+  <p class="sub">Série Sentinel-2 (2016 – 2021), indice de turbidité NDTI. Faites défiler les dates ou lancez l'animation ;
+    cliquez sur une commune pour sa population.</p>
+  <div class="map-wrap">
+    <div id="map" role="region" aria-label="Carte interactive du lac Wégnia"></div>
+    <div class="map-panel">
+      <div class="date-row">
+        <button id="play" class="btn small" aria-label="Lancer l'animation">▶</button>
+        <input id="slider" type="range" min="0" max="0" value="0" aria-label="Date de l'image">
+        <span id="date" class="date">—</span>
+      </div>
+      <label class="opacity">Opacité <input id="opacity" type="range" min="0.2" max="1" step="0.05" value="0.9"></label>
+      <ul class="legend">
+        <li><i style="background:#ff2800"></i>Fortement trouble</li>
+        <li><i style="background:#ffbe00"></i>Trouble</li>
+        <li><i style="background:#96c81e"></i>Légèrement trouble</li>
+        <li><i style="background:#006e14"></i>Eau claire</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Sources : Copernicus Sentinel-2 (traitement A. GUINDO), limites communales DNCT, localités INSTAT/SPOT6.
+    Les cartes de turbidité ont été calées sur le fond à partir de leur carroyage (précision de l'ordre de quelques dizaines de mètres).</p>
+</section>
+
+<section id="projets" class="section">
+  <h2>Projets</h2>
+  <div class="grid">
+    <article class="card">
+      <img src="img/turbidite-2017.jpg" alt="Cartes de turbidité du lac Wégnia en 2017" loading="lazy">
+      <div class="card-body">
+        <span class="tag">Télédétection · Qualité de l'eau</span>
+        <h3>Turbidité du lac Wégnia par Sentinel-2</h3>
+        <p>Série 2016 – 2021, indice NDTI. Les eaux troubles couvrent en moyenne 34,6 à 39,3 % du lac selon les années,
+          et plus de 77 % en novembre entre 2018 et 2021, sous l'effet des apports post-pluviaux.
+          Communication orale au MSAS 2026.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="img/occupation-sol.jpg" alt="Occupation du sol 1986, 1999, 2006 et 2019" loading="lazy">
+      <div class="card-body">
+        <span class="tag">Occupation du sol · Landsat</span>
+        <h3>Dynamique de l'occupation du sol (1986 – 2019)</h3>
+        <p>Classification d'images Landsat sur le bassin versant du lac Wégnia : bâti, forêt, savane, zones agricoles et plans d'eau
+          à quatre dates, pour mesurer les pressions sur la zone humide.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="img/relief.jpg" alt="Carte d'altitude du bassin versant" loading="lazy">
+      <div class="card-body">
+        <span class="tag">Hydrologie · MNT</span>
+        <h3>Morphométrie du bassin versant</h3>
+        <p>Relief et réseau hydrographique à partir d'ASTER GDEM : profondeur moyenne du lac estimée à 5,17 m,
+          volume de 6,3 millions de m³, densité de drainage de 2,29 km/km².</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="img/zone-inondable.jpg" alt="Lac Wégnia et zone inondable" loading="lazy">
+      <div class="card-body">
+        <span class="tag">Risques · Inondation</span>
+        <h3>Zones inondables et risques d'inondation</h3>
+        <p>Cartographie des zones inondables autour du lac Wégnia et, à Bamako, études du risque d'inondation
+          (Missabougou, Niamakoro, Woyowayanko) par télédétection, SIG et analyse multicritère.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-visual energy" aria-hidden="true">⚡</div>
+      <div class="card-body">
+        <span class="tag">Géomarketing · Énergie</span>
+        <h3>Électrification rurale par mini-réseaux</h3>
+        <p>Chez WeLight : analyse multicritère du potentiel d'électrification, études de la demande et socio-économiques,
+          contrôle qualité automatisé et tableaux de bord Power BI, dans plus de 8 pays d'Afrique.
+          <em>Données confidentielles, non publiées.</em></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-visual osm" aria-hidden="true">🗺️</div>
+      <div class="card-body">
+        <span class="tag">Cartographie humanitaire · OSM</span>
+        <h3>Cartographie collaborative et formation</h3>
+        <p>Task Manager et Advanced Mapper sur Humanitarian OpenStreetMap Team depuis 2017, formateur YouthMappers,
+          formations SIG pour Save the Children (géocodage, géotraitement, cartographie thématique).</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="parcours" class="section narrow">
+  <h2>Parcours</h2>
+  <ol class="timeline">
+    <li><span>2022 – aujourd'hui</span><b>Responsable Géomarketing</b> — WeLight (AXIAN Group)</li>
+    <li><span>Depuis 2025</span><b>Doctorant en télédétection appliquée</b> — ED-DESSLA, USSGB</li>
+    <li><span>2022</span><b>Consultant SIG</b> — Save the Children · <b>Consultant S&amp;E</b> — FAWE Mali &amp; Zanzibar</li>
+    <li><span>2021</span><b>Consultant Data Manager</b> — ARCAD SIDA</li>
+    <li><span>2019 – 2021</span><b>Chef d'équipe de repérage</b> — INSTAT (Recensement Général des Unités Économiques)</li>
+    <li><span>2015 – 2019</span><b>Assistant de recherche · Chef de projet</b> — Labo-HoPE, FHG – USSGB</li>
+    <li><span>2018 – 2020</span><b>Master 2 Géomatique, Aménagement et Gestion des Territoires</b> — USSGB, mention Bien</li>
+  </ol>
+</section>
+
+<section id="publications" class="section narrow">
+  <h2>Publications &amp; communications</h2>
+  <ul class="pubs">
+    <li><b>Guindo A., Diawara H., Berthé T.</b> — Évaluation spatio-temporelle de la turbidité des eaux du lac Wégnia à partir de l'imagerie Sentinel-2 (Mali). <i>15<sup>e</sup> Symposium Malien sur les Sciences Appliquées (MSAS 2026)</i>, communication orale.</li>
+    <li><b>Berthé T., Diawara H., Bengaly S., Guindo A.</b> — Cartographie des zones à risque d'inondation dans le bassin versant de la rivière Woyowayanko à Bamako. <i>MSAS 2026</i>.</li>
+    <li>Étude de la contribution des forages dans l'amélioration de l'accès à l'eau potable à N'Tabacoro Cité Extension (Bamako). <i>European Scientific Journal</i>, 2021. <a href="https://doi.org/10.19044/esj.2021.v17n40p106" target="_blank" rel="noopener">DOI</a></li>
+    <li>Analyse des paramètres morphométriques et du risque d'inondation dans les bassins versants de Niamakoro et Missabougou, 2022.</li>
+    <li><b>Coulibaly K., Guindo A.</b> — Célébration ostentatoire des cérémonies sociales en milieu urbain : cas du mariage dans le district de Bamako, 2022.</li>
+    <li>Posters aux Journées internationales des SIG (JISIG, FHG – USSGB), 2019 et 2020 : risque d'inondation à Missabougou, mobilité du lit du Bani, dépôts d'ordures dans les cours d'eau de Bamako, accès aux soins à Bankass.</li>
+  </ul>
+</section>
+
+<section id="competences" class="section narrow">
+  <h2>Compétences</h2>
+  <div class="chips">
+    <span>ArcGIS Pro</span><span>QGIS</span><span>GRASS GIS</span><span>ENVI</span><span>Sentinel-2 · Landsat</span>
+    <span>Digital Earth Africa (Sandbox)</span><span>Python</span><span>R</span><span>Power BI</span><span>PostgreSQL</span>
+    <span>KoboToolbox · ODK · CSPro · SurveyCTO</span><span>ESIA / PGES</span><span>RUSLE</span><span>Analyse multicritère</span>
+    <span>OpenStreetMap</span><span>Suivi-évaluation</span><span>Gestion de projet</span>
+  </div>
+  <p class="sub">Langues : français et anglais (bilingue), bambara, dogosso, fulfuldé.</p>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Contact</h2>
+  <p>Ouvert aux échanges sur le géospatial, l'énergie, l'environnement et la recherche.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:allayeguindo9@gmail.com">allayeguindo9@gmail.com</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/allayeguindo" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</section>
+
+<footer>© <span id="year"></span> Allaye GUINDO · Bamako, Mali · Fonds de carte © Esri, © OpenStreetMap contributors</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

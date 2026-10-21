@@ -1,0 +1,289 @@
+{
+ "bounds": [
+  [
+   13.29374403048804,
+   -8.138214224548488
+  ],
+  [
+   13.30533403716283,
+   -8.11119429439339
+  ]
+ ],
+ "frames": [
+  {
+   "id": "2016_01",
+   "year": 2016,
+   "month": 1,
+   "parts": {
+    "Fortement trouble": 24.2,
+    "Trouble": 39.8,
+    "Légèrement trouble": 29.9,
+    "Eau claire": 6.1
+   }
+  },
+  {
+   "id": "2017_01",
+   "year": 2017,
+   "month": 1,
+   "parts": {
+    "Fortement trouble": 15.0,
+    "Trouble": 7.3,
+    "Légèrement trouble": 43.3,
+    "Eau claire": 34.4
+   }
+  },
+  {
+   "id": "2017_03",
+   "year": 2017,
+   "month": 3,
+   "parts": {
+    "Fortement trouble": 9.5,
+    "Trouble": 63.6,
+    "Légèrement trouble": 25.5,
+    "Eau claire": 1.4
+   }
+  },
+  {
+   "id": "2017_05",
+   "year": 2017,
+   "month": 5,
+   "parts": {
+    "Fortement trouble": 31.5,
+    "Trouble": 56.4,
+    "Légèrement trouble": 12.0,
+    "Eau claire": 0.1
+   }
+  },
+  {
+   "id": "2017_07",
+   "year": 2017,
+   "month": 7,
+   "parts": {
+    "Fortement trouble": 49.9,
+    "Trouble": 39.2,
+    "Légèrement trouble": 9.1,
+    "Eau claire": 1.8
+   }
+  },
+  {
+   "id": "2017_09",
+   "year": 2017,
+   "month": 9,
+   "parts": {
+    "Fortement trouble": 62.5,
+    "Trouble": 26.2,
+    "Légèrement trouble": 8.6,
+    "Eau claire": 2.7
+   }
+  },
+  {
+   "id": "2017_11",
+   "year": 2017,
+   "month": 11,
+   "parts": {
+    "Fortement trouble": 3.5,
+    "Trouble": 49.6,
+    "Légèrement trouble": 40.9,
+    "Eau claire": 6.0
+   }
+  },
+  {
+   "id": "2018_01",
+   "year": 2018,
+   "month": 1,
+   "parts": {
+    "Fortement trouble": 17.8,
+    "Trouble": 19.3,
+    "Légèrement trouble": 56.3,
+    "Eau claire": 6.7
+   }
+  },
+  {
+   "id": "2018_03",
+   "year": 2018,
+   "month": 3,
+   "parts": {
+    "Fortement trouble": 26.4,
+    "Trouble": 20.6,
+    "Légèrement trouble": 27.2,
+    "Eau claire": 25.8
+   }
+  },
+  {
+   "id": "2018_05",
+   "year": 2018,
+   "month": 5,
+   "parts": {
+    "Fortement trouble": 15.1,
+    "Trouble": 41.3,
+    "Légèrement trouble": 43.3,
+    "Eau claire": 0.2
+   }
+  },
+  {
+   "id": "2018_07",
+   "year": 2018,
+   "month": 7,
+   "parts": {
+    "Fortement trouble": 55.1,
+    "Trouble": 29.6,
+    "Légèrement trouble": 12.2,
+    "Eau claire": 3.1
+   }
+  },
+  {
+   "id": "2018_09",
+   "year": 2018,
+   "month": 9,
+   "parts": {
+    "Fortement trouble": 63.3,
+    "Trouble": 28.8,
+    "Légèrement trouble": 6.0,
+    "Eau claire": 1.9
+   }
+  },
+  {
+   "id": "2018_11",
+   "year": 2018,
+   "month": 11,
+   "parts": {
+    "Fortement trouble": 6.1,
+    "Trouble": 80.7,
+    "Légèrement trouble": 9.6,
+    "Eau claire": 3.6
+   }
+  },
+  {
+   "id": "2019_01",
+   "year": 2019,
+   "month": 1,
+   "parts": {
+    "Fortement trouble": 18.7,
+    "Trouble": 9.7,
+    "Légèrement trouble": 31.8,
+    "Eau claire": 39.8
+   }
+  },
+  {
+   "id": "2019_03",
+   "year": 2019,
+   "month": 3,
+   "parts": {
+    "Fortement trouble": 28.4,
+    "Trouble": 17.0,
+    "Légèrement trouble": 27.1,
+    "Eau claire": 27.6
+   }
+  },
+  {
+   "id": "2019_05",
+   "year": 2019,
+   "month": 5,
+   "parts": {
+    "Fortement trouble": 37.9,
+    "Trouble": 52.2,
+    "Légèrement trouble": 6.9,
+    "Eau claire": 3.1
+   }
+  },
+  {
+   "id": "2019_07",
+   "year": 2019,
+   "month": 7,
+   "parts": {
+    "Fortement trouble": 86.8,
+    "Trouble": 9.1,
+    "Légèrement trouble": 3.5,
+    "Eau claire": 0.7
+   }
+  },
+  {
+   "id": "2019_09",
+   "year": 2019,
+   "month": 9,
+   "parts": {
+    "Fortement trouble": 24.8,
+    "Trouble": 46.7,
+    "Légèrement trouble": 26.0,
+    "Eau claire": 2.6
+   }
+  },
+  {
+   "id": "2019_11",
+   "year": 2019,
+   "month": 11,
+   "parts": {
+    "Fortement trouble": 10.1,
+    "Trouble": 79.7,
+    "Légèrement trouble": 7.3,
+    "Eau claire": 2.9
+   }
+  },
+  {
+   "id": "2021_01",
+   "year": 2021,
+   "month": 1,
+   "parts": {
+    "Fortement trouble": 21.7,
+    "Trouble": 12.2,
+    "Légèrement trouble": 34.0,
+    "Eau claire": 32.1
+   }
+  },
+  {
+   "id": "2021_03",
+   "year": 2021,
+   "month": 3,
+   "parts": {
+    "Fortement trouble": 21.8,
+    "Trouble": 27.3,
+    "Légèrement trouble": 26.9,
+    "Eau claire": 24.0
+   }
+  },
+  {
+   "id": "2021_05",
+   "year": 2021,
+   "month": 5,
+   "parts": {
+    "Fortement trouble": 49.1,
+    "Trouble": 43.9,
+    "Légèrement trouble": 5.9,
+    "Eau claire": 1.1
+   }
+  },
+  {
+   "id": "2021_07",
+   "year": 2021,
+   "month": 7,
+   "parts": {
+    "Fortement trouble": 90.1,
+    "Trouble": 6.7,
+    "Légèrement trouble": 2.5,
+    "Eau claire": 0.7
+   }
+  },
+  {
+   "id": "2021_09",
+   "year": 2021,
+   "month": 9,
+   "parts": {
+    "Fortement trouble": 32.8,
+    "Trouble": 48.6,
+    "Légèrement trouble": 14.1,
+    "Eau claire": 4.4
+   }
+  },
+  {
+   "id": "2021_11",
+   "year": 2021,
+   "month": 11,
+   "parts": {
+    "Fortement trouble": 6.0,
+    "Trouble": 81.7,
+    "Légèrement trouble": 8.7,
+    "Eau claire": 3.7
+   }
+  }
+ ]
+}
