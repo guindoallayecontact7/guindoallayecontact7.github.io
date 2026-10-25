@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Vidéos TikTok</title>
+<style>
+:root { --blue: #0a66c2; --ink: #1d2733; --muted: #5b6878; --bg: #f6f8fb; --card: #fff; --line: #e1e7ef; }
+@media (prefers-color-scheme: dark) { :root { --ink: #e8eef6; --muted: #a6b3c3; --bg: #0b1726; --card: #12233a; --line: #23395a; } }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.5; }
+main { max-width: 520px; margin: 0 auto; padding: 32px 16px; }
+.video { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 20px; }
+video { width: 100%; border-radius: 10px; background: #000; }
+.dl { display: block; text-align: center; margin-top: 12px; padding: 12px; border-radius: 10px; background: var(--blue); color: #fff; font-weight: 600; text-decoration: none; }
+.sub { color: var(--muted); font-size: .95rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Vidéos TikTok</h1>
+  <p class="sub">Appuie sur « Télécharger », puis publie la vidéo depuis ta galerie dans TikTok.</p>
+
+  <div class="video">
+    <h2>1. Ce lac du Mali change de couleur</h2>
+    <video src="01-lac-change-de-couleur.mp4" controls playsinline preload="metadata"></video>
+    <a class="dl" href="01-lac-change-de-couleur.mp4" download>Télécharger</a>
+  </div>
+
+  <div class="video">
+    <h2>2. 6 cartes pour comprendre un territoire</h2>
+    <video src="02-six-cartes-geomaticien.mp4" controls playsinline preload="metadata"></video>
+    <a class="dl" href="02-six-cartes-geomaticien.mp4" download>Télécharger</a>
+  </div>
+</main>
+</body>
+</html>
