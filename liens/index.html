@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allaye GUINDO — Liens</title>
+<meta name="description" content="Tous les liens d'Allaye GUINDO : portfolio, CV, LinkedIn, cartographie humanitaire et contact pour formations SIG et cartes sur mesure.">
+<meta property="og:title" content="Allaye GUINDO — Liens">
+<meta property="og:description" content="Géomaticien · SIG & Télédétection. Portfolio, CV, formations et contact.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://guindoallayecontact7.github.io/liens/">
+<meta property="og:image" content="https://guindoallayecontact7.github.io/img/banniere.jpg">
+<link rel="canonical" href="https://guindoallayecontact7.github.io/liens/">
+<style>
+:root {
+  --navy: #0f2742;
+  --navy-2: #1f3a5f;
+  --blue: #0a66c2;
+  --sky: #82beff;
+  --ink: #1d2733;
+  --muted: #5b6878;
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --line: #e1e7ef;
+  --radius: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #e8eef6; --muted: #a6b3c3; --bg: #0b1726; --card: #12233a; --line: #23395a; }
+}
+* { box-sizing: border-box; }
+img { max-width: 100%; display: block; }
+body { margin: 0; font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; }
+.sub { color: var(--muted); }
+footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 24px; border-top: 1px solid var(--line); }
+/* Page de liens (liens/) pour la bio TikTok */
+.links { max-width: 520px; margin: 0 auto; padding: 48px 16px 24px; text-align: center; }
+.links-avatar { width: 112px; height: 112px; object-fit: cover; border-radius: 50%; margin: 0 auto 14px; border: 3px solid var(--blue); }
+.links h1 { margin: 0 0 4px; font-size: 1.6rem; }
+.links .kicker { color: var(--blue); font-weight: 600; margin: 0 0 8px; }
+.links-list { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+.link { display: block; padding: 14px 18px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--card);
+  color: var(--ink); text-decoration: none; font-weight: 600; }
+.link:hover { border-color: var(--blue); }
+.link.primary { background: var(--blue); border-color: var(--blue); color: #fff; }
+</style>
+</head>
+<body class="links-page">
+
+<main class="links">
+  <img class="links-avatar" src="../img/hero-lacs.jpg" alt="">
+  <h1>Allaye GUINDO</h1>
+  <p class="kicker">Géomaticien · SIG &amp; Télédétection · Bamako</p>
+  <p class="sub">Cartes, images satellites et astuces SIG. Formations et cartes sur mesure.</p>
+
+  <nav class="links-list" aria-label="Liens">
+    <a class="link primary" href="mailto:allaye.guindo.contact@gmail.com?subject=Formation%20SIG%20%2F%20carte%20sur%20mesure">
+      Formation SIG ou carte sur mesure : me contacter</a>
+    <a class="link" href="../">Mon portfolio et la carte interactive du lac Wégnia</a>
+    <a class="link" href="../#galerie">Galerie de cartes</a>
+    <a class="link" href="../cv/CV_Allaye_GUINDO_FR.pdf" target="_blank" rel="noopener">CV (FR)</a>
+    <a class="link" href="../cv/CV_Allaye_GUINDO_EN.pdf" target="_blank" rel="noopener">CV (EN)</a>
+    <a class="link" href="https://www.linkedin.com/in/allayeguindo" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="link" href="https://www.researchgate.net/profile/Allaye-Guindo" target="_blank" rel="noopener">ResearchGate</a>
+    <a class="link" href="https://tasks.hotosm.org/users/Allaye%20Guindo" target="_blank" rel="noopener">Cartographie humanitaire (HOT)</a>
+  </nav>
+</main>
+
+<footer>© <span id="year"></span> Allaye GUINDO · Bamako, Mali</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
