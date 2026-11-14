@@ -1,0 +1,148 @@
+TEXTES À LIRE — Série « QGIS pour débutants » (@alti_express)
+Lis à ton rythme, avec ta voix et ton style. Les sous-titres de la vidéo défilent au même moment : ils te servent de repère.
+Astuce : TikTok → Importer la vidéo sans voix → Voix off (micro) → enregistre en regardant les sous-titres.
+
+============================================================
+ÉPISODE 1 — Installer QGIS sur Windows   (fichier : 09-qgis-ep1-installer-sans-voix.mp4)
+============================================================
+[0:00]  Tu veux apprendre QGIS, mais tu ne sais pas par où commencer ?
+[0:03]  Dans cet épisode, on l'installe ensemble, pas à pas.
+[0:06]  Épisode 1 de la série QGIS pour débutants !
+
+[0:09]  Avant tout, vérifie ton ordinateur.
+[0:11]  Il te faut Windows 10 ou 11, en 64 bits.
+[0:14]  Au moins 4 Go de mémoire vive, et idéalement 8.
+[0:18]  Et quelques gigaoctets d'espace libre sur ton disque.
+
+[0:22]  Étape 1 : va sur le site officiel, qgis.org.
+[0:26]  Clique sur Télécharger, puis choisis la version pour Windows.
+[0:29]  Prends la version LTR : c'est la version stable, recommandée pour débuter.
+[0:34]  Attention : télécharge QGIS uniquement sur le site officiel. Il est gratuit, ne paie jamais pour l'avoir !
+
+[0:41]  Étape 2 : lance le fichier téléchargé.
+[0:44]  Clique sur Suivant, accepte la licence, et garde le dossier proposé.
+[0:49]  Clique sur Installer, puis patiente quelques minutes.
+[0:51]  À la fin, l'icône de QGIS apparaît dans ton menu Démarrer.
+
+[0:55]  Étape 3 : ouvre QGIS.
+[0:58]  Voici la page d'accueil : tes projets récents à gauche, et les modèles de projet à droite.
+[1:03]  Double-clique sur Nouveau projet vide pour commencer.
+
+[1:06]  Étape 4 : mets QGIS en français.
+[1:08]  Va dans Préférences, puis Options, onglet Général.
+[1:12]  Coche Remplacer les paramètres régionaux, choisis français, puis redémarre QGIS.
+
+[1:17]  Étape 5 : choisis le système de coordonnées de ton projet, le SCR.
+[1:21]  Va dans Projet, puis Propriétés, onglet SCR.
+[1:25]  Pour Bamako, tu peux choisir WGS 84, UTM zone 29 Nord : tes distances seront en mètres.
+
+[1:33]  Et voilà, tu es prêt !
+[1:35]  Ajoute une couche, et ta première carte s'affiche.
+[1:38]  Dans le prochain épisode : on place des points GPS sur une carte.
+
+[1:42]  Si cette vidéo t'a permis de découvrir QGIS, laisse un LIKE, partage-la avec tes amis et abonne-toi à notre page pour découvrir encore plus de tutoriels sur les SIG, la cartographie et la géomatique.
+[1:53]  Active la cloche pour ne manquer aucune de nos prochaines vidéos.
+[1:56]  À très bientôt pour un nouveau tutoriel !
+
+============================================================
+ÉPISODE 2 — Afficher des points GPS   (fichier : 10-qgis-ep2-points-gps-sans-voix.mp4)
+============================================================
+[0:00]  Tu as des coordonnées GPS, et tu veux les voir sur une carte ?
+[0:03]  En deux minutes, je te montre comment faire avec QGIS.
+[0:06]  Épisode 2 de la série QGIS pour débutants !
+
+[0:09]  Tout commence par un simple tableau.
+[0:11]  Une colonne pour le nom, une pour la latitude, et une pour la longitude.
+[0:15]  Enregistre-le au format CSV, depuis Excel par exemple.
+
+[0:19]  Dans QGIS, ouvre le gestionnaire des sources de données, puis Texte délimité.
+[0:23]  Choisis ton fichier : QGIS affiche un aperçu de tes colonnes.
+[0:27]  Dans Définition de la géométrie, mets la longitude en X, la latitude en Y, et le SCR WGS 84.
+[0:36]  Puis clique sur Ajouter.
+
+[0:37]  Et voilà ! Chaque ligne devient un point sur la carte.
+[0:40]  Et la table attributaire garde toutes tes informations.
+
+[0:43]  Tu veux plutôt créer tes propres points ?
+[0:46]  Va dans Couche, Créer une couche, Nouvelle couche GeoPackage.
+[0:49]  Donne-lui un nom, choisis le type Point, et ajoute tes champs.
+
+[0:53]  Active le mode édition, avec l'icône du crayon.
+[0:56]  Clique sur Ajouter une entité point, puis clique sur la carte, à l'endroit voulu.
+[1:01]  Remplis le formulaire : le nom, le type, la date.
+[1:04]  Enregistre tes modifications, et tes points sont sur la carte !
+
+[1:08]  Astuce de terrain : avec l'application gratuite QField, tu relèves tes points directement avec ton téléphone.
+[1:14]  Ensuite, tu les récupères dans QGIS.
+[1:16]  Prochain épisode : calculer des superficies.
+
+[1:20]  Si cette vidéo t'a permis de découvrir QGIS, laisse un LIKE, partage-la avec tes amis et abonne-toi à notre page pour découvrir encore plus de tutoriels sur les SIG, la cartographie et la géomatique.
+[1:31]  Active la cloche pour ne manquer aucune de nos prochaines vidéos.
+[1:35]  À très bientôt pour un nouveau tutoriel !
+
+============================================================
+ÉPISODE 3 — Calculer des superficies   (fichier : 11-qgis-ep3-superficies-sans-voix.mp4)
+============================================================
+[0:00]  Autour du lac Wégnia, quelle est la plus grande commune ?
+[0:03]  QGIS peut te le dire en quelques clics.
+[0:05]  Épisode 3 de la série QGIS pour débutants !
+
+[0:08]  D'abord, charge ta couche de polygones : ici, les neuf communes autour du lac Wégnia, dans les cercles de Kolokani et de Kati.
+[0:16]  Dans les propriétés du projet, vérifie que l'ellipsoïde est bien défini : WGS 84.
+[0:23]  Ainsi, QGIS calcule les vraies surfaces, en tenant compte de la forme de la Terre.
+
+[0:28]  Ouvre la calculatrice de champ, avec l'icône du boulier.
+[0:32]  Crée un nouveau champ : superficie_km2, de type nombre décimal.
+[0:37]  Écris l'expression : round, $area, divisé par un million.
+[0:42]  $area donne la surface en mètres carrés. En divisant par un million, on obtient des kilomètres carrés.
+
+[0:48]  Clique sur OK : la nouvelle colonne apparaît dans la table attributaire.
+[0:53]  Trie-la : Guihoyo arrive en tête, avec plus de 1 000 km² !
+[0:57]  Et Ouolodo est la plus petite, avec environ 220 km².
+
+[1:01]  Pour finir, colore les communes selon leur superficie, avec une symbologie graduée.
+[1:06]  Ajoute une étiquette avec le nom et la surface.
+[1:09]  Et ta carte des superficies est prête !
+
+[1:11]  Pour une longueur, utilise $length. Pour un périmètre, $perimeter.
+[1:16]  Et ça marche aussi pour tes parcelles, tes champs ou tes zones d'étude.
+[1:20]  Prochain épisode : télécharger et afficher une image satellite.
+
+[1:25]  Si cette vidéo t'a permis de découvrir QGIS, laisse un LIKE, partage-la avec tes amis et abonne-toi à notre page pour découvrir encore plus de tutoriels sur les SIG, la cartographie et la géomatique.
+[1:35]  Active la cloche pour ne manquer aucune de nos prochaines vidéos.
+[1:39]  À très bientôt pour un nouveau tutoriel !
+
+============================================================
+ÉPISODE 4 — Les images satellites   (fichier : 12-qgis-ep4-image-satellite-sans-voix.mp4)
+============================================================
+[0:00]  Voici Bamako, vue depuis l'espace.
+[0:02]  Cette image satellite est gratuite, et tu peux l'ouvrir dans QGIS.
+[0:06]  Épisode 4 de la série QGIS pour débutants !
+
+[0:09]  Où trouver des images satellites gratuites ?
+[0:12]  Sentinel-2, du programme européen Copernicus : une nouvelle image tous les cinq jours, avec des pixels de dix mètres.
+[0:18]  Landsat, de la NASA et de l'USGS : des archives depuis les années 1970.
+[0:25]  Sur Copernicus Browser ou sur EarthExplorer, crée un compte gratuit, choisis ta zone, une date sans nuages, et télécharge.
+
+[0:32]  Dans QGIS, ouvre le gestionnaire des sources de données, onglet Raster, et choisis ton image.
+[0:38]  Surprise : les couleurs semblent bizarres !
+[0:41]  C'est normal : une image satellite contient plusieurs bandes, et QGIS ne sait pas encore lesquelles afficher.
+
+[0:48]  Ouvre le panneau de style, et choisis Couleur à bandes multiples.
+[0:52]  Ici, mon fichier contient quatre bandes : bleu, vert, rouge et proche infrarouge. Je mets donc la bande 3 en rouge, la 2 en vert, et la 1 en bleu.
+[1:01]  Et voilà les couleurs naturelles : le fleuve Niger, les ponts, et les quartiers de Bamako !
+
+[1:07]  Maintenant, une astuce de pro : les fausses couleurs.
+[1:10]  Mets le proche infrarouge dans le canal rouge.
+[1:13]  La végétation apparaît en rouge vif : parfait pour repérer les jardins, les champs et les arbres !
+
+[1:19]  On peut aller encore plus loin, avec l'indice de végétation : le NDVI.
+[1:24]  Dans la calculatrice raster, écris : proche infrarouge moins rouge, divisé par proche infrarouge plus rouge.
+[1:30]  En vert, la végétation. En rouge, l'eau. En jaune et orange, les sols nus et le bâti.
+
+[1:40]  Source de l'image : Copernicus Sentinel-2, le 19 janvier 2025.
+[1:46]  Prochain épisode : réaliser une carte de localisation professionnelle.
+
+[1:50]  Si cette vidéo t'a permis de découvrir QGIS, laisse un LIKE, partage-la avec tes amis et abonne-toi à notre page pour découvrir encore plus de tutoriels sur les SIG, la cartographie et la géomatique.
+[2:01]  Active la cloche pour ne manquer aucune de nos prochaines vidéos.
+[2:05]  À très bientôt pour un nouveau tutoriel !
