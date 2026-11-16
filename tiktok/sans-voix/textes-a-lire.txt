@@ -146,3 +146,36 @@ Astuce : TikTok → Importer la vidéo sans voix → Voix off (micro) → enregi
 [1:47]  Si cette vidéo t'a permis de découvrir QGIS, laisse un LIKE, partage-la avec tes amis et abonne-toi à notre page pour découvrir encore plus de tutoriels sur les SIG, la cartographie et la géomatique.
 [1:57]  Active la cloche pour ne manquer aucune de nos prochaines vidéos.
 [2:01]  À très bientôt pour un nouveau tutoriel !
+
+============================================================
+ÉPISODE 5 — La carte de localisation   (fichier : 13-qgis-ep5-carte-localisation-sans-voix.mp4)
+============================================================
+[0:00]  La carte de localisation, on la retrouve dans tous les rapports et tous les mémoires.
+[0:04]  Aujourd'hui, tu apprends à la faire avec QGIS.
+[0:07]  C'est l'épisode 5, le dernier de notre série QGIS pour débutants !
+
+[0:11]  Le principe est simple : on part du plus grand pour aller vers le plus petit.
+[0:15]  D'abord toute la zone d'étude : ici, les neuf communes autour du lac Wégnia.
+[0:19]  Puis un zoom sur le lac lui-même, avec ses villages, sur une image satellite.
+
+[0:24]  Prépare tes couches : tes communes, tes localités et ton image satellite.
+[0:29]  Colore les communes par cercle, et place un repère bien visible sur ton site d'étude.
+
+[0:34]  Crée une nouvelle mise en page, au format A4.
+[0:36]  Ajoute deux cartes : une pour la zone d'étude, et une grande pour le zoom sur le lac.
+[0:41]  Pour chaque carte, coche « Verrouiller les couches », pour qu'elle garde son propre contenu.
+
+[0:46]  Le secret, ce sont les aperçus.
+[0:48]  Dans les propriétés de la carte de la zone, ajoute un aperçu relié à la carte du lac : un cadre montre exactement où se trouve le zoom.
+[0:56]  Et si tu as les limites officielles du pays, ajoute une troisième carte, à l'échelle nationale.
+
+[1:01]  Termine l'habillage : un titre, une légende, une échelle et la flèche du nord.
+[1:07]  N'oublie pas les sources, le système de coordonnées, l'auteur et la date.
+[1:11]  Exporte en image ou en PDF : ta carte de localisation professionnelle est prête !
+
+[1:16]  Bravo, tu as terminé la série QGIS pour débutants !
+[1:19]  Dis-moi en commentaire quel thème tu veux pour la prochaine série.
+
+[1:23]  Si cette vidéo t'a permis de découvrir QGIS, laisse un LIKE, partage-la avec tes amis et abonne-toi à notre page pour découvrir encore plus de tutoriels sur les SIG, la cartographie et la géomatique.
+[1:33]  Active la cloche pour ne manquer aucune de nos prochaines vidéos.
+[1:37]  À très bientôt pour un nouveau tutoriel !
